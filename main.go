@@ -14,5 +14,8 @@ func main() {
 	dao.ConnectMySQLDB()
 	// 3. 启动路由
 	r := routers.InitRouter()
-	r.Run(fmt.Sprintf(":%d", config.Conf.ServerPort))
+	err := r.Run(fmt.Sprintf(":%d", config.Conf.ServerPort))
+	if err != nil {
+		panic("Gin服务启动失败,error=" + err.Error())
+	}
 }

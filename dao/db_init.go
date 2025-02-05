@@ -1,7 +1,6 @@
 package dao
 
 import (
-	"context"
 	"fmt"
 	"go.uber.org/zap"
 	"gorm.io/driver/mysql"
@@ -59,7 +58,7 @@ func ConnectMySQLDB() {
 	return
 }
 
-func NewDBClient(ctx context.Context) *gorm.DB {
-	db := _db
-	return db.WithContext(ctx)
-}
+//func NewDBClient(ctx context.Context) *gorm.DB {
+//	db := _db
+//	return db.WithContext(ctx)
+//}
