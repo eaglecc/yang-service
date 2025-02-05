@@ -1,4 +1,4 @@
-serverPort: 8500
+serverPort: 8501
 
 # 数据库配置
 #	password := "cyc_db123"
@@ -9,4 +9,4 @@ database:
   dbname: yang_server
   username: root
   password: root
-  myconfig: charset=utf8&parseTime=True
+  myconfig: charset=utf8mb4&parseTime=True&loc=Local

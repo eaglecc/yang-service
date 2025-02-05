@@ -13,5 +13,7 @@ func (*XUtils) InitXUtils(Router *gin.Engine) {
 	groups := Router.Group("api/v1/xutils")
 	{
 		groups.GET("/getAngryHistory", handler.GetAngryHistory)
+		groups.POST("/addAngryHistory", handler.AddAngryHistory)
+
 	}
 }

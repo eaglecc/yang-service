@@ -42,6 +42,7 @@ func ConnectMySQLDB() {
 			return time.Now().In(loc)
 		},
 	})
+
 	if err != nil {
 		zap.S().Error("数据库连接失败")
 		panic(err)
